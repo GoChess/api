@@ -27,3 +27,8 @@ type Blog struct {
 	BlogPreview Preview
 	Paragraphs  []BlogParagraph
 }
+
+// Previews but a lot of them
+type Previews struct {
+	Previews []Preview
+}
