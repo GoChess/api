@@ -13,6 +13,7 @@ type Preview struct {
 	FirstP string `json: "firstP"`
 	Date   time.Time
 	Author string `json: "author"`
+	PostID int    `json: "postID"`
 }
 
 // BlogParagraph provides paragraphs, imagery and
@@ -31,4 +32,9 @@ type Blog struct {
 // Previews but a lot of them
 type Previews struct {
 	Previews []Preview
+}
+
+// Test allows a json object with a test message to be sent, temporary for checking routing
+type Test struct {
+	Test string `json: "test", omitempty`
 }
